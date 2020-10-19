@@ -27,7 +27,6 @@ a {
 h1 {
   margin: 0px;
   padding: 0px;
-  letter-spacing: 1.5px;
 }
 
 /* =========================================================================================================== */
@@ -39,12 +38,13 @@ h1 {
 .intro {
   position: relative;
   text-align: center;
-  background: #1e272e;
+  /* background: #fe907f; */
+  background: #c8f2aa;
+
 }
 
-.intro img {
-  width: 500px;
-  position: relative;  
+.intro-text{
+  padding-bottom: 0px;
 }
 
 /*  Structure that can contains more than one element(A firewall to prevent unwanted interactions) */
@@ -52,20 +52,22 @@ h1 {
 even when the browser is stretched out, all of its content remains at the center. Also to add 8% padding to both left and right*/
 .container {
   margin: 0 auto;
-  padding: 0 8%;
+  padding: 0 5%;
   max-width: 1400px;
 }
 
 /* something that wraps around a single object to provide more functionality and interface to */
 /* The goal of this 'wrapper' is to add top and bottom padding to its own content interface (The title and the subtitle) */
 .wrapper {
-  padding: 30px 0;
+  padding: 28px 0px;
+  flex-direction: row-reverse;
 }
 
 /* child element of a > div (intro-text) inside 'wrapper' */
 /* This is the title of the intro page (AKA <h1>) */
 .wrapper .title {
-  color: white;
+  font-family: Raleway,sans-serif;
+  color: rgb(63, 61, 86);
 }
 
 /* child element of a > div (intro-text) inside 'wrapper' */
@@ -74,17 +76,65 @@ even when the browser is stretched out, all of its content remains at the center
   font-weight: 300;
   font-size: 20px;
   line-height: 25px;
-  color: white;
+  color: rgb(63, 61, 86);
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
+.wrapper img {
+  width: 510px;
+  position: relative;  
+}
+
+
+
+
+
+.social-share{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.social-share .social {
+  padding: 0;
+}
+
+.social-share li{
+  width: 35px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
 /* =========================================================================================================== */
 /* =========================================================================================================== */
 /* =========================================================================================================== */
 
+@media (max-width: 600px) {
+  .wrapper img {
+    margin-left: -64px;
+  }
+}
 
+@media (max-width: 900px) {
 
+  .container {
+    padding: 0 30px;
+  }
+
+  .title {
+    font-size: 35px;
+    margin-bottom: -10px;
+  }    
+
+  .wrapper img {
+    width: 520px;
+    margin-bottom: -50px;
+  }
+  
+}
 
 @media (min-width: 900px) {
   /* The entire section box dedicated to the intro */
@@ -99,15 +149,16 @@ even when the browser is stretched out, all of its content remains at the center
         align-items: center;
         min-height: 90vh;
       }
+          /* child element of a > div (intro-text) inside 'wrapper'*/
+          /* This is the title of the intro page (AKA <h1>) */
+          .title {
+            font-size: 46px;
+            margin-bottom: 15px;
+          }      
           /* This is the subtitle of the intro page (AKA <p>) */
           .subtitle {
             font-size: 24px;
             line-height: 30px;
-          }
-          /* child element of a > div (intro-text) inside 'wrapper' */
-          .title {
-            font-size: 46px;
-            margin-bottom: 15px;
           }
   
  
@@ -120,9 +171,11 @@ even when the browser is stretched out, all of its content remains at the center
 @media (min-width: 1000px) {
   /* A div element inside wrapper (AKA the box container the title for the intro apge) */
   .intro-text {
-    padding-right: 15px;
+    padding-right: 30px;
+    padding-left:35px;
   }
-      /* child element of a > div (intro-text) inside 'wrapper' */
+      /* child element of a > div (intro-text) inside 'wrapper'*/
+      /* This is the title of the intro page (AKA <h1>) */
       .title {
         font-size: 60px;
       }
@@ -133,4 +186,15 @@ even when the browser is stretched out, all of its content remains at the center
         line-height: 33px;
         max-width: 600px;
       }
+
+
+}
+
+@media (min-width: 1300px) {
+  /* A div element inside wrapper (AKA the box container the title for the intro apge) */
+  .intro-text {
+    padding-right: 100px;
+    padding-left:0px;
+  }
+
 }
