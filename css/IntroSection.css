@@ -1,0 +1,136 @@
+/*--------------Default declaration for every website project------------*/
+html,
+body {
+  margin: 0%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+/*------x-------Default declaration for every website project-----x-------*/
+
+/*----------------------------global variables------------------------------------*/
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  /*To style all the anchor tags globally*/
+  text-decoration: none; /*removes the blue umderline from all anchor link*/
+  color: inherit;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 1.5px;
+}
+
+/* =========================================================================================================== */
+/* =========================================================================================================== */
+/* =========================================================================================================== */
+
+/* The entire section box dedicated to the intro */
+/* The goal of this entire <section> is to keep it centered */
+.intro {
+  position: relative;
+  text-align: center;
+  background: #1e272e;
+}
+
+.intro img {
+  width: 500px;
+  position: relative;  
+}
+
+/*  Structure that can contains more than one element(A firewall to prevent unwanted interactions) */
+/* The goal of this entire structure 'container' is to keep it all of its content elements WITHIN a max-widith of 1400px 
+even when the browser is stretched out, all of its content remains at the center. Also to add 8% padding to both left and right*/
+.container {
+  margin: 0 auto;
+  padding: 0 8%;
+  max-width: 1400px;
+}
+
+/* something that wraps around a single object to provide more functionality and interface to */
+/* The goal of this 'wrapper' is to add top and bottom padding to its own content interface (The title and the subtitle) */
+.wrapper {
+  padding: 30px 0;
+}
+
+/* child element of a > div (intro-text) inside 'wrapper' */
+/* This is the title of the intro page (AKA <h1>) */
+.wrapper .title {
+  color: white;
+}
+
+/* child element of a > div (intro-text) inside 'wrapper' */
+/* This is the subtitle of the intro page (AKA <p>) */
+.subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+/* =========================================================================================================== */
+/* =========================================================================================================== */
+/* =========================================================================================================== */
+
+
+
+
+@media (min-width: 900px) {
+  /* The entire section box dedicated to the intro */
+  /* The goal of this entire <section> is to keep it centered */
+  .intro {
+    /* this keeps all the text in a straight line order vertically */
+    text-align: left;
+  }
+      /* something that wraps around a single object to provide more functionality and interface to */
+      .wrapper {
+        display: flex;
+        align-items: center;
+        min-height: 90vh;
+      }
+          /* This is the subtitle of the intro page (AKA <p>) */
+          .subtitle {
+            font-size: 24px;
+            line-height: 30px;
+          }
+          /* child element of a > div (intro-text) inside 'wrapper' */
+          .title {
+            font-size: 46px;
+            margin-bottom: 15px;
+          }
+  
+ 
+          
+}
+
+/* =========================================================================================================== */
+
+
+@media (min-width: 1000px) {
+  /* A div element inside wrapper (AKA the box container the title for the intro apge) */
+  .intro-text {
+    padding-right: 15px;
+  }
+      /* child element of a > div (intro-text) inside 'wrapper' */
+      .title {
+        font-size: 60px;
+      }
+      /* This is the subtitle of the intro page (AKA <p>) */
+      .subtitle {
+        margin: 0;
+        font-size: 30px;
+        line-height: 33px;
+        max-width: 600px;
+      }
+}
