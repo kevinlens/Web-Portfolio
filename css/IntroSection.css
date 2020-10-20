@@ -110,6 +110,11 @@ even when the browser is stretched out, all of its content remains at the center
   padding-left: 15px;
 }
 
+.social-share li svg:hover{
+    fill: #C0392B;
+}
+
+
 svg {
   fill: rgb(63, 61, 86);
   transform: translate(-51%, -50%);
@@ -127,8 +132,7 @@ svg {
     padding-bottom: 10px;
   }
   .wrapper img {
-    margin-left: -64px;
-    margin-top: 50px;
+    margin-left: -65.5px;
   }
 
 /* =========================== */
@@ -159,9 +163,14 @@ svg {
 
   .wrapper img {
     width: 520px;
-    margin-bottom: -50px;
+    margin-bottom: 15px;
+    margin-top:120px;
   }
 
+  .subtitle{
+    padding: 0px;
+  }
+  
   .social-share li{
     width: 45px;
     height: 30px;
@@ -276,7 +285,14 @@ svg {
   }
   /* A div element inside wrapper (AKA the box container the title for the intro apge) */
   .intro-text {
-    padding-right: 180px;
+    padding-right: 150px;
+    padding-bottom: 130px;
+  }
+
+
+  .social-share{
+    padding-top:8px;
+    margin-left:5px;
   }
 
   .subtitle{
