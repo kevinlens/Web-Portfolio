@@ -82,47 +82,75 @@ even when the browser is stretched out, all of its content remains at the center
 }
 
 .wrapper img {
-  width: 510px;
+  width: 540px;
   position: relative;  
 }
 
 
-
+/* =========================================================================================================== */
 
 
 .social-share{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
 }
 
 .social-share .social {
   padding: 0;
+  
 }
 
 .social-share li{
-  width: 35px;
-  height: 20px;
+  width: 65px;
+  height: 60px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  padding-left: 15px;
 }
+
+svg {
+  fill: rgb(63, 61, 86);
+  transform: translate(-51%, -50%);
+  transition: fill 0.2s ease-in-out;
+  left: 50%;
+
+}
+
 /* =========================================================================================================== */
 /* =========================================================================================================== */
 /* =========================================================================================================== */
 
 @media (max-width: 600px) {
+  .wrapper{
+    padding-bottom: 10px;
+  }
   .wrapper img {
     margin-left: -64px;
+    margin-top: 50px;
+  }
+
+/* =========================== */
+
+  .subtitle{
+    padding: 0px;
+  }
+
+  .social-share li{
+    width: 45px;
+    height: 30px;
   }
 }
+
+/* =========================================================================================================== */
 
 @media (max-width: 900px) {
 
   .container {
     padding: 0 30px;
   }
+
 
   .title {
     font-size: 35px;
@@ -133,8 +161,15 @@ even when the browser is stretched out, all of its content remains at the center
     width: 520px;
     margin-bottom: -50px;
   }
+
+  .social-share li{
+    width: 45px;
+    height: 30px;
+  }
   
 }
+/* =========================================================================================================== */
+
 
 @media (min-width: 900px) {
   /* The entire section box dedicated to the intro */
@@ -149,6 +184,9 @@ even when the browser is stretched out, all of its content remains at the center
         align-items: center;
         min-height: 90vh;
       }
+      .intro-text {
+        padding-left:30px;
+      }
           /* child element of a > div (intro-text) inside 'wrapper'*/
           /* This is the title of the intro page (AKA <h1>) */
           .title {
@@ -161,6 +199,35 @@ even when the browser is stretched out, all of its content remains at the center
             line-height: 30px;
           }
   
+/* =================================== */
+
+          .social-share{
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            margin: 10px 20px;
+          }
+          
+          .social-share .social {
+            padding: 0;
+            
+          }
+          
+          .social-share li{
+            width: 50px;
+            height: 35px;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          
+          svg {
+            fill: rgb(63, 61, 86);
+            transform: translate(-51%, -50%);
+            transition: fill 0.2s ease-in-out;
+            left: 50%;
+          
+          }
  
           
 }
@@ -188,13 +255,32 @@ even when the browser is stretched out, all of its content remains at the center
       }
 
 
+      
+
 }
+/* =========================================================================================================== */
 
 @media (min-width: 1300px) {
   /* A div element inside wrapper (AKA the box container the title for the intro apge) */
   .intro-text {
-    padding-right: 100px;
+    padding-right: 70px;
     padding-left:0px;
   }
 
 }
+/* =========================================================================================================== */
+
+@media (min-width: 1350px) {
+  .container{
+    padding-right:90px;
+  }
+  /* A div element inside wrapper (AKA the box container the title for the intro apge) */
+  .intro-text {
+    padding-right: 180px;
+  }
+
+  .subtitle{
+    max-width: 500px;
+  }
+}
+
