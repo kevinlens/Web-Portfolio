@@ -4,6 +4,15 @@
 .intro-projects .project-header {
   text-align: center;
   justify-content: center;
+  font-size: 50px;
+  padding-top:10px;
+  padding-bottom:0px;
+  margin-bottom: -30px;
+}
+
+.intro-projects .project-image2{
+  padding-bottom: 0;
+  margin-bottom:-80px;
 }
 
 .intro-projects .gallery {
@@ -21,12 +30,22 @@
   box-shadow: 6px 6px 6px 6px #b2bec3; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+
 .project-info {
   float: left;
   width: 40%;
   padding-right: 50px;
   margin-left: -20px;
   margin-top: 40px;
+}
+
+.project-info h4{
+  font-size: 34px;
+  margin-bottom:0px;
+}
+
+.project-info .technologies{
+  padding-bottom: 20px;
 }
 
 .project-info ul {
