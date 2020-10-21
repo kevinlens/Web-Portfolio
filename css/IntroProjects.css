@@ -1,0 +1,92 @@
+
+.intro-projects{
+  background-color: #fcf3cf;
+}
+.intro-projects .project-header {
+  text-align: center;
+  justify-content: center;
+}
+
+.intro-projects .gallery {
+  float: right;
+  width: 60%;
+}
+
+.intro-projects .gallery img {
+  margin-top: 100px;
+  margin-right: 50px;
+  width: 108%;
+  height: auto;
+
+  -webkit-box-shadow: 3px 3px 5px 6px #b2bec3; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #b2bec3; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #b2bec3; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.project-info {
+  float: left;
+  width: 40%;
+  padding-right: 50px;
+  margin-left: -20px;
+  margin-top: 40px;
+}
+
+.project-info ul {
+  margin-left: -80px;
+}
+
+.project-info .mongo-svg {
+  width: 130px;
+}
+
+.project-info .express-svg {
+  width: 95px;
+  padding-top: 42px;
+}
+
+.project-info ul :nth-child(3) svg {
+  width: 50px;
+  padding-top: 35px;
+}
+
+.project-info ul :nth-child(4) svg {
+  width: 105px;
+  padding-top: 42px;
+}
+
+.project-info li {
+  float: left;
+  list-style-type: none;
+  display: inline;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.project-info li svg {
+  width: 95px;
+  height: 90px;
+  position: relative;
+  display: inline;
+  vertical-align: middle;
+  padding-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .intro-projects .gallery {
+    float: none;
+    width: 100%;
+  }
+
+  .intro-projects .gallery img {
+    margin-top: 100px;
+    margin-right: 50px;
+    width: 100%;
+  }
+
+  .project-info{
+    width:100%;
+    }
+  .project-info p{
+    padding-bottom: 20px;
+  }
+}

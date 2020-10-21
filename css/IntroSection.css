@@ -1,302 +1,79 @@
-/*--------------Default declaration for every website project------------*/
-html,
-body {
-  margin: 0%;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-/*------x-------Default declaration for every website project-----x-------*/
-
-/*----------------------------global variables------------------------------------*/
-* {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-a {
-  /*To style all the anchor tags globally*/
-  text-decoration: none; /*removes the blue umderline from all anchor link*/
-  color: inherit;
-}
-
-h1 {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* =========================================================================================================== */
-/* =========================================================================================================== */
 /* =========================================================================================================== */
 
-/* The entire section box dedicated to the intro */
-/* The goal of this entire <section> is to keep it centered */
-.intro {
-  position: relative;
-  text-align: center;
-  /* background: #fe907f; */
-  background: #c8f2aa;
-
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 40px 10px 10px 10px;
+  overflow: hidden;
 }
 
-.intro-text{
-  padding-bottom: 0px;
+.nav-bar a {
+  font-size: 18px;
+  float: left;
+  list-style-type: none;
+  display: inline;
+  padding: 0px 5px;
+  position:relative;
+  z-index:99;
 }
 
-/*  Structure that can contains more than one element(A firewall to prevent unwanted interactions) */
-/* The goal of this entire structure 'container' is to keep it all of its content elements WITHIN a max-widith of 1400px 
-even when the browser is stretched out, all of its content remains at the center. Also to add 8% padding to both left and right*/
-.container {
-  margin: 0 auto;
-  padding: 0 5%;
-  max-width: 1400px;
-}
-
-/* something that wraps around a single object to provide more functionality and interface to */
-/* The goal of this 'wrapper' is to add top and bottom padding to its own content interface (The title and the subtitle) */
-.wrapper {
-  padding: 28px 0px;
-  flex-direction: row-reverse;
-}
-
-/* child element of a > div (intro-text) inside 'wrapper' */
-/* This is the title of the intro page (AKA <h1>) */
-.wrapper .title {
-  font-family: Raleway,sans-serif;
+.nav-bar a li {
   color: rgb(63, 61, 86);
-}
-
-/* child element of a > div (intro-text) inside 'wrapper' */
-/* This is the subtitle of the intro page (AKA <p>) */
-.subtitle {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 25px;
-  color: rgb(63, 61, 86);
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.wrapper img {
-  width: 540px;
-  position: relative;  
-}
-
-
-/* =========================================================================================================== */
-
-
-.social-share{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-share .social {
-  padding: 0;
-  
-}
-
-.social-share li{
-  width: 65px;
-  height: 60px;
-  position: relative;
+  padding: 0px 15px;
   display: inline-block;
-  vertical-align: middle;
-  padding-left: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
-.social-share li svg:hover{
-    fill: #C0392B;
+.nav-bar a li:hover {
+  transition: 0.2s ease-in-out;
+  color: #e58e26 !important;
+}
+
+/* select all elements when zoomed over 'resume' class */
+.resume:hover > * {
+  transition: 0.3s ease-in-out;
+  color: #e58e26 !important;
 }
 
 
-svg {
-  fill: rgb(63, 61, 86);
-  transform: translate(-51%, -50%);
-  transition: fill 0.2s ease-in-out;
-  left: 50%;
-
-}
-
-/* =========================================================================================================== */
-/* =========================================================================================================== */
 /* =========================================================================================================== */
 
 @media (max-width: 600px) {
-  .wrapper{
-    padding-bottom: 10px;
-  }
-  .wrapper img {
-    margin-left: -65.5px;
-  }
 
-/* =========================== */
-
-  .subtitle{
-    padding: 0px;
-  }
-
-  .social-share li{
-    width: 45px;
-    height: 30px;
+  .nav-bar{
+    float: left;
+    margin-left:-10px;
+    margin-top:-5px;
   }
 }
-
-/* =========================================================================================================== */
 
 @media (max-width: 900px) {
 
-  .container {
-    padding: 0 30px;
+  .nav-bar{
+    float: left;
+    padding:0;
+    margin-right:-150px;
   }
 
 
-  .title {
-    font-size: 35px;
-    margin-bottom: -10px;
-  }    
-
-  .wrapper img {
-    width: 520px;
-    margin-bottom: 15px;
-    margin-top:120px;
-  }
-
-  .subtitle{
-    padding: 0px;
+  .nav-bar a {
+    font-size: 16px;
+    float: none;
+    display:block;
+    padding: 5px 0px;
   }
   
-  .social-share li{
-    width: 45px;
-    height: 30px;
-  }
-  
-}
-/* =========================================================================================================== */
-
-
-@media (min-width: 900px) {
-  /* The entire section box dedicated to the intro */
-  /* The goal of this entire <section> is to keep it centered */
-  .intro {
-    /* this keeps all the text in a straight line order vertically */
+  .nav-bar a li {
     text-align: left;
+    padding: 0px 0px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
   }
-      /* something that wraps around a single object to provide more functionality and interface to */
-      .wrapper {
-        display: flex;
-        align-items: center;
-        min-height: 90vh;
-      }
-      .intro-text {
-        padding-left:30px;
-      }
-          /* child element of a > div (intro-text) inside 'wrapper'*/
-          /* This is the title of the intro page (AKA <h1>) */
-          .title {
-            font-size: 46px;
-            margin-bottom: 15px;
-          }      
-          /* This is the subtitle of the intro page (AKA <p>) */
-          .subtitle {
-            font-size: 24px;
-            line-height: 30px;
-          }
+
   
-/* =================================== */
-
-          .social-share{
-            display: flex;
-            align-items: left;
-            justify-content: left;
-            margin: 10px 20px;
-          }
-          
-          .social-share .social {
-            padding: 0;
-            
-          }
-          
-          .social-share li{
-            width: 50px;
-            height: 35px;
-            position: relative;
-            display: inline-block;
-            vertical-align: middle;
-          }
-          
-          svg {
-            fill: rgb(63, 61, 86);
-            transform: translate(-51%, -50%);
-            transition: fill 0.2s ease-in-out;
-            left: 50%;
-          
-          }
- 
-          
 }
 
 /* =========================================================================================================== */
-
-
-@media (min-width: 1000px) {
-  /* A div element inside wrapper (AKA the box container the title for the intro apge) */
-  .intro-text {
-    padding-right: 30px;
-    padding-left:35px;
-  }
-      /* child element of a > div (intro-text) inside 'wrapper'*/
-      /* This is the title of the intro page (AKA <h1>) */
-      .title {
-        font-size: 60px;
-      }
-      /* This is the subtitle of the intro page (AKA <p>) */
-      .subtitle {
-        margin: 0;
-        font-size: 30px;
-        line-height: 33px;
-        max-width: 600px;
-      }
-
-
-      
-
-}
-/* =========================================================================================================== */
-
-@media (min-width: 1300px) {
-  /* A div element inside wrapper (AKA the box container the title for the intro apge) */
-  .intro-text {
-    padding-right: 70px;
-    padding-left:0px;
-  }
-
-}
-/* =========================================================================================================== */
-
-@media (min-width: 1350px) {
-  .container{
-    padding-right:90px;
-  }
-  /* A div element inside wrapper (AKA the box container the title for the intro apge) */
-  .intro-text {
-    padding-right: 150px;
-    padding-bottom: 130px;
-  }
-
-
-  .social-share{
-    padding-top:8px;
-    margin-left:5px;
-  }
-
-  .subtitle{
-    max-width: 500px;
-  }
-}
 
