@@ -1,0 +1,15 @@
+.about-me{
+  padding-top:110px;
+  padding-bottom: 110px;
+}
+
+.about-me .image img{
+  float: left;
+  width:30%;
+  height: auto;
+}
+
+.about-me .text{
+  float: right;
+  width:60%;
+}
