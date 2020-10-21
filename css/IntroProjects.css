@@ -1,18 +1,18 @@
 .intro-projects {
-  background-color: #C8F7C5
+  background-color: #c8f7c5;
 }
 .intro-projects .project-header {
   text-align: center;
   justify-content: center;
   font-size: 50px;
-  padding-top:10px;
-  padding-bottom:0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   margin-bottom: -30px;
 }
 
-.intro-projects .project-image2{
+.intro-projects .project-image2 {
   padding-bottom: 0;
-  margin-bottom:-80px;
+  margin-bottom: -80px;
 }
 
 .intro-projects .gallery {
@@ -30,7 +30,6 @@
   box-shadow: 6px 6px 6px 6px #b2bec3; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-
 .project-info {
   float: left;
   width: 40%;
@@ -39,12 +38,12 @@
   margin-top: 40px;
 }
 
-.project-info h4{
+.project-info h4 {
   font-size: 34px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
-.project-info .technologies{
+.project-info .technologies {
   padding-bottom: 20px;
 }
 
@@ -56,10 +55,10 @@
   width: 150px;
 }
 
-.project-info .redux{
+.project-info .redux {
   width: 50px;
-  margin-top:-30px;
-  margin-left:5px;
+  margin-top: -30px;
+  margin-left: 5px;
 }
 
 .project-info .express-svg {
@@ -96,41 +95,68 @@
 }
 
 /* =========================================================================================================== */
+
+a.button1 {
+  display: inline-block;
+  padding: 0.60em 1.2em 0.35em 1.2em;
+  margin: 50px 0.3em 0.3em 0;
+  border: 0.1em solid #ffd387;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  background-color: #ffd387;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color:rgb(63, 61, 86);
+  text-align: center;
+  transition: all 0.2s;
+}
+a.button1:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+@media all and (max-width: 30em) {
+   a.button1 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+/* =========================================================================================================== */
 /* =========================================================================================================== */
 /* =========================================================================================================== */
 
 @media (max-width: 610px) {
-
-  .project-info{
+  .project-info {
     margin-left: 0px;
   }
 
-  .project-info .redux{
+  .project-info .redux {
     width: 50px;
-    margin-top:-20px!important;
-    margin-left:5px;
+    margin-top: -20px !important;
+    margin-left: 5px;
   }
 
   .project-info ul :nth-child(3) svg {
-    margin-top:-20px;
-    margin-left: 3px!important;
-   }
+    margin-top: -20px;
+    margin-left: 3px !important;
+  }
 
   .project-info ul :nth-child(4) svg {
-   margin-top:-20px;
-   margin-left: 3px!important;
+    margin-top: -20px;
+    margin-left: 3px !important;
   }
 }
 
 /* =========================================================================================================== */
 
 @media (max-width: 900px) {
-  .project-info{
+  .project-info {
     margin-left: 0px;
   }
 }
 /* =========================================================================================================== */
-
 
 @media (max-width: 1200px) {
   .intro-projects .gallery {
@@ -141,7 +167,7 @@
   .intro-projects .gallery img {
     margin-top: 100px;
     width: 100%;
-    margin-right:50px;
+    margin-right: 50px;
   }
 
   .project-info {
@@ -150,35 +176,31 @@
   .project-info p {
     padding-bottom: 20px;
   }
-  .project-info .redux{
-    margin-top:0px;
+  .project-info .redux {
+    margin-top: 0px;
   }
-  
+
   .project-info ul :nth-child(4) svg {
     padding-top: 42px;
-
   }
 }
 
 /* =========================================================================================================== */
 
-
 @media (min-width: 1201px) {
-.intro-projects .gallery img {
-  width: 110%;
-  margin-left:-5%;
-}
+  .intro-projects .gallery img {
+    width: 110%;
+    margin-left: -5%;
+  }
 }
 
 /* =========================================================================================================== */
-
 
 @media (min-width: 1415px) {
   .intro-projects .gallery img {
     margin-top: 100px;
 
-    margin-left:-5%;
+    margin-left: -5%;
     width: 117%;
   }
-
 }
