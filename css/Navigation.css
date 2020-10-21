@@ -22,7 +22,7 @@
   padding: 0px 15px;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .nav-bar a li:hover {
@@ -77,9 +77,3 @@
 
 /* =========================================================================================================== */
 
-
-@media (min-width: 1350px) {
-  .nav-bar{
-    margin-left:-25px;
-  }
-}

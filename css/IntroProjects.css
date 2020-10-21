@@ -1,5 +1,4 @@
-
-.intro-projects{
+.intro-projects {
   background-color: #fcf3cf;
 }
 .intro-projects .project-header {
@@ -32,26 +31,27 @@
 }
 
 .project-info ul {
-  margin-left: -80px;
+  margin-left: -50px;
 }
 
 .project-info .mongo-svg {
-  width: 130px;
+  width: 150px;
 }
 
 .project-info .express-svg {
-  width: 95px;
+  width: 105px;
   padding-top: 42px;
 }
 
 .project-info ul :nth-child(3) svg {
-  width: 50px;
+  width: 70px;
   padding-top: 35px;
 }
 
 .project-info ul :nth-child(4) svg {
-  width: 105px;
-  padding-top: 42px;
+  width: 115px;
+  padding-top: 10px;
+  margin-left: 5px;
 }
 
 .project-info li {
@@ -71,6 +71,22 @@
   padding-top: 30px;
 }
 
+/* =========================================================================================================== */
+/* =========================================================================================================== */
+/* =========================================================================================================== */
+
+@media (max-width: 525px) {
+  .project-info ul :nth-child(4) svg {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-info ul :nth-child(4) svg {
+    padding-left:0px;
+  }
+}
+
 @media (max-width: 1200px) {
   .intro-projects .gallery {
     float: none;
@@ -83,10 +99,13 @@
     width: 100%;
   }
 
-  .project-info{
-    width:100%;
-    }
-  .project-info p{
+  .project-info {
+    width: 100%;
+  }
+  .project-info p {
     padding-bottom: 20px;
+  }
+  .project-info ul :nth-child(4) svg {
+    padding-top: 42px;
   }
 }
