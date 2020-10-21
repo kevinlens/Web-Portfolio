@@ -1,15 +1,65 @@
 .about-me{
+  background-color:#f3fff2;
   padding-top:110px;
   padding-bottom: 110px;
 }
 
 .about-me .image img{
   float: left;
-  width:30%;
+  width:35%;
+
   height: auto;
 }
 
 .about-me .text{
   float: right;
   width:60%;
+  padding-left:50px;
+}
+
+
+.about-me h1{
+  font-size: 36px;
+}
+
+
+.about-me p{
+font-size: 18px;
+padding-left:10px;
+}
+
+@media (max-width: 900px) {
+  .about-me{
+    padding-top:50px;
+    padding-bottom: 50px;
+  }
+  
+  .about-me .image img{
+    float: inital;
+    width:90%;
+    height: auto;
+    padding-left:7.5%;
+    margin-left: 0;
+  }
+
+  .about-me .text{
+    float: left;
+    width:90%;
+    padding-top:30px;
+    padding-left:7.5%;
+  }
+  .about-me h1{
+    font-size: 24px;
+    padding-left:0px;
+    padding-bottom: 20px;
+    margin:0px;
+  }
+  
+  
+  .about-me p{
+  font-size: 16px;
+  padding:0px;
+  margin:0px;
+
+  }
 }
