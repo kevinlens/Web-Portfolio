@@ -115,7 +115,7 @@ a.button1 {
 a.button1:hover {
   color: #000000;
   border: 0.1em solid rgb(200, 247, 197);
-  background-color:  #e2fae1;;
+  background-color:  #e2fae1;
 }
 @media all and (max-width: 30em) {
    a.button1 {
