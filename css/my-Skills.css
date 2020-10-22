@@ -34,3 +34,13 @@ body {
 	background: #fff;
 	position: relative;
 }
+
+
+@media (min-width: 1200px) {
+	.grid .grid-box img.special-sizing1{
+	width:80px!important;
+	}
+	.grid .grid-box img.special-sizing2{
+		width:160px!important;
+	}
+}
